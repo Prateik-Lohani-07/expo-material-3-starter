@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+# Expo Material 3 Starter Template
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This template is meant to speed-up development using React Native Paper + Nativewind, complete with Material You (Material Design 3) theming.
 
-## Get started
+## Usage
 
-1. Install dependencies
+To get started:
 
-   ```bash
-   npm install
-   ```
+1. Clone this repository:
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```git
+git clone https://github.com/Prateik-Lohani-07/expo-material-3-starter.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```shell
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+The template contains setup that most expo developers are familiar with, so no customization in folder structure is required. You can start building in the app folder as you normally do in any expo app.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+A theme has been pre-setup in the `src/styles` folder so you can start building right away. For custom theming, follow step 3 onwards.
 
-## Join the community
+3. For custom theming, you can generate a Material 3 JSON file from the following [free tool](https://material-foundation.github.io/material-theme-builder). After selecting colors and fonts, click "Export" on the right sidebar's bottom menu and select the "Material Theme (JSON)" option.
 
-Join our community of developers creating universal apps.
+4. Once you have the JSON, plug in the necessary values into objects into both Theme.ts (utilities for Nativewind) and PaperTheme.ts (styles for PaperTheme).
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. Run the app. You can now use Nativewind colors anywhere in your app and your React Native Paper components will be styled according to your theme.
+
+## Folder structure
+
+The template follows a basic expo folder structure, except it uses `src/app` (instead of `app` being in the root directory) for the app entrypoint. You can find the theming logic in the `src/styles` folder.
+
+## Styling
+
+1. `global.css`: main entrypoint for tailwind base, components and utilities.
+2. `PaperTheme.ts`: contains a PaperTheme object containing colors relevant for use by react native paper
