@@ -8,7 +8,7 @@ To get started:
 
 1. Clone this repository:
 
-```git
+```shell
 git clone https://github.com/Prateik-Lohani-07/expo-material-3-starter.git
 ```
 
@@ -36,3 +36,10 @@ The template follows a basic expo folder structure, except it uses `src/app` (in
 
 1. `global.css`: main entrypoint for tailwind base, components and utilities.
 2. `PaperTheme.ts`: contains a PaperTheme object containing colors relevant for use by react native paper
+3. `Theme.ts`: contains variables to be injected into Nativewind.
+
+## Conclusion and Future Scope
+
+Feel free to add any improvements and/or corrections to this template.
+
+I am also currently working on a CLI tool that will allow automatic creation of the `PaperTheme.ts` and `Theme.ts` objects so that this template can then be integrated into that. 
