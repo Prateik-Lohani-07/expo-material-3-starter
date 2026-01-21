@@ -26,7 +26,7 @@ To get started:
 
 3. <a id="step-3"></a>For custom theming, you can generate a Material 3 JSON file from the following [free tool](https://material-foundation.github.io/material-theme-builder). After selecting colors and fonts, click "**Export**" on the right sidebar's bottom menu and select the "**Material Theme (JSON)**" option.
 
-4. Once you have the JSON, plug in the necessary values into objects into both `Theme.ts` (utilities for Nativewind) and `PaperTheme.ts` (styles for PaperTheme).
+4. Once you have the JSON, plug in the necessary values into objects into both `Theme.ts` (utilities for Nativewind) and `PaperTheme.ts` (styles for React Native Paper).
 
 5. Run the app. You can now use Nativewind colors anywhere in your app and your React Native Paper components will be styled according to your theme.
 
