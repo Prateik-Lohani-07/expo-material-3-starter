@@ -37,7 +37,7 @@ The template follows a basic expo folder structure, except it uses `src/app` (in
 ## Styling
 
 1. `global.css`: main entrypoint for tailwind base, components and utilities.
-2. `PaperTheme.ts`: contains a PaperTheme object containing colors relevant for use by react native paper
+2. `PaperTheme.ts`: contains a `PaperTheme` object containing colors relevant for use by React Native Paper.
 3. `Theme.ts`: contains variables to be injected into Nativewind.
 
 ## Conclusion and Future Scope
