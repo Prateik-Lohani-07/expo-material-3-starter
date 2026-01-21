@@ -20,9 +20,6 @@ export default function Index() {
 				onPress={() => {
 					setColorScheme(colorScheme === 'light' ? 'dark' : 'light')
 				}}/>
-
-			<IconButton onPress={() => {}} icon={'home'} mode='contained' size={48}></IconButton>
-			<View className='size-10 bg-primary'></View>
         </View>
     )
 }
